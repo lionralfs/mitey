@@ -1,0 +1,37 @@
+{
+  "name": "mitey",
+  "version": "0.1.0",
+  "description": "CLI Tool for mite (https://mite.yo.lk)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mitey": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lionralfs/mitey.git"
+  },
+  "keywords": [
+    "cli",
+    "mite",
+    "timemanagement",
+    "command-line-tool"
+  ],
+  "author": "Lion Ralfs <lion.ralfs@hotmail.com> (https://github.com/lionralfs)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lionralfs/mitey/issues"
+  },
+  "homepage": "https://github.com/lionralfs/mitey#readme",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.11.0"
+  },
+  "engines": {
+    "node": ">=6.11.1"
+  }
+}

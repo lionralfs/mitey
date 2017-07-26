@@ -1,0 +1,10 @@
+# Editor/OS specific files
+.idea
+*.iml
+out
+gen
+.DS_Store
+
+# Project specific files
+node_modules
+key.json
