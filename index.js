@@ -11,17 +11,15 @@ const keyFile = 'key.json';
 
 const init = () => {
     co(function* () {
-        return yield prompt.password('Please enter your API-Key. ' +
+        const apiKey = yield prompt.password('Please enter your API-Key. ' +
             'You can find it at https://mitey.mite.yo.lk/myself\n');
-    }).then(function (apiKey) {
-        fs.open(keyFile, 'r', (err) => {
+        fs.open(keyFile, 'r', (err, data) => {
             if (err) {
+                // file doesn't exist
                 saveKey(apiKey);
             } else {
-                fs.readFile(keyFile, (err, data) => {
-                    if (err) {
-                        return console.log(chalk.red(err));
-                    } else {
+                fs.readFile(keyFile, (err) => {
+                    if (!err) {
                         co(function* () {
                             const override = yield prompt.confirm('It seems like you have already registered an API-Key.\n' +
                                 'Do you want to override it? (y/n)\n');
@@ -42,13 +40,13 @@ const saveKey = key => {
         if (err) {
             return console.log(chalk.red(err));
         }
-        console.log(chalk.green('Your API-Key was saved!'));
+        console.log(chalk.green('Your API-Key was saved!\n'));
     });
 };
 
 const start = taskname => {
     if (!taskname) {
-        return console.log(chalk.red('Please specify a task name'));
+        return console.log(chalk.yellow('Please specify a task name!\n'));
     }
     console.log(taskname);
 };
