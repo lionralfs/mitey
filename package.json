@@ -1,11 +1,12 @@
 {
   "name": "mitey",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI Tool for mite (https://mite.yo.lk)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "preferGlobal": true,
   "bin": {
     "mitey": "./index.js"
   },

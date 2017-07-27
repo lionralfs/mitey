@@ -36,5 +36,26 @@ program
     .description('Check what tracker is currently running.')
     .action(cmds.current);
 
+// customers
+program
+    .command('customers')
+    .option('-n, --name [name]', 'Filter by name')
+    .description('List all active customers, sorted by name.')
+    .action(cmds.customers);
+
+// projects
+program
+    .command('projects')
+    .option('-n, --name [name]', 'Filter by name')
+    .description('List all active projects, sorted by name.')
+    .action(cmds.projects);
+
+// services
+program
+    .command('services')
+    .option('-n, --name [name]', 'Filter by name')
+    .description('List all active projects, sorted by name.')
+    .action(cmds.services);
+
 program.version(version);
 program.parse(process.argv);
