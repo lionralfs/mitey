@@ -16,9 +16,9 @@ click `Display API key` and copy your key.
 
 ## Usage
 - Use `mitey -h` to see all available commands.
+- `mitey start` will walk you through a process to create a new time entry.
+- `mitey stop` will try to stop the current tracker, if there is one.
 - `mitey current ` will give you the current tracker, if there is one.
-- `mitey stop` will try to stop the current tracker, if there is one. You can also pass an ID,
-like `mitey stop 53087168` to stop a certain tracker.
 
 More commands will be implemented soon.
 

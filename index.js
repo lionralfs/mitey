@@ -2,6 +2,7 @@
 'use strict';
 
 const program = require('commander');
+const prompt = require('prompt');
 const {version} = require('./package.json');
 
 const cmds = require('./lib/cmds');
