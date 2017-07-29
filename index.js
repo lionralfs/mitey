@@ -2,7 +2,6 @@
 'use strict';
 
 const program = require('commander');
-const prompt = require('prompt');
 const {version} = require('./package.json');
 
 const cmds = require('./lib/cmds');
@@ -10,7 +9,7 @@ const cmds = require('./lib/cmds');
 // init
 program
     .command('init')
-    .description('Set a team name and your API-Key.')
+    .description('Configure mitey.')
     .action(cmds.init);
 
 // verify
@@ -21,13 +20,13 @@ program
 
 // start
 program
-    .command('stop [id]')
-    .description('Stop a task. When no id is specified, mitey tries to stop the current tracker.')
+    .command('stop')
+    .description('Stop a task.')
     .action(cmds.stop);
 
 // start
 program
-    .command('start [taskname]')
+    .command('start')
     .description('Start a task.')
     .action(cmds.start);
 

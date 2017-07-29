@@ -11,7 +11,7 @@ Go to your mite settings (https://\<your-team>.mite.yo.lk/myself), select ☑️
 click `Display API key` and copy your key.
 
 1. Run `npm install -g mitey` to install mitey globally.
-2. Run `mitey init` and enter your team name and the API key you just generated.
+2. Run `mitey init` and follow the instructions.
 3. Run `mitey verify` to check if everything was set up correctly.
 
 ## Usage
