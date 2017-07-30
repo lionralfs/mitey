@@ -1,4 +1,8 @@
 # mitey👨‍💻
+[![version][version-badge]][package]
+[![downloads][downloads-badge]][npm-stat]
+[![MIT License][license-badge]][LICENSE]
+
 A CLI Tool for [mite](https://mite.yo.lk/). (⚠️ This is still a work in progress!)
 
 ## Requirements
@@ -48,3 +52,10 @@ Feel free to report bugs [here](https://github.com/lionralfs/mitey/issues).
 
 ## License
 MIT
+
+[version-badge]: https://img.shields.io/npm/v/mitey.svg?style=flat-square
+[package]: https://www.npmjs.com/package/mitey
+[downloads-badge]: https://img.shields.io/npm/dm/mitey.svg?style=flat-square
+[npm-stat]: https://npm-stat.com/charts.html?package=mitey&from=2016-07-24
+[license-badge]: https://img.shields.io/npm/l/mitey.svg?style=flat-square
+[license]: https://github.com/lionralfs/mitey/blob/master/LICENSE
