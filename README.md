@@ -6,7 +6,7 @@
 A CLI Tool for [mite](https://mite.yo.lk/). (⚠️ This is still a work in progress!)
 
 ## Requirements
-You must have [`node`](https://nodejs.org/) and
+You must have [`node`](https://nodejs.org/) (v6 or higher) and
 [`npm`](https://www.npmjs.com/) installed to run mitey.
 
 Before you start, you need to generate an API key for your account.
