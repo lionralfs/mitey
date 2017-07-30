@@ -1,6 +1,6 @@
 {
   "name": "mitey",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "CLI Tool for mite (https://mite.yo.lk)",
   "main": "index.js",
   "scripts": {
