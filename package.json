@@ -4,7 +4,7 @@
   "description": "CLI Tool for mite (https://mite.yo.lk)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc --reporter=html --reporter=text mocha ./test/*.test.js"
   },
   "preferGlobal": true,
   "bin": {
@@ -36,5 +36,10 @@
   },
   "engines": {
     "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0"
   }
 }

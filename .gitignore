@@ -8,3 +8,5 @@ gen
 # Project specific files
 node_modules
 config.yml
+.nyc_output
+coverage
