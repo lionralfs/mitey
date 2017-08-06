@@ -57,5 +57,11 @@ program
     .description('List all active projects, sorted by name.')
     .action(cmds.services);
 
+// today
+program
+    .command('today')
+    .description('Get all time entries for the current date.')
+    .action(cmds.today);
+
 program.version(version);
 program.parse(process.argv);

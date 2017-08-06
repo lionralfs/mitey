@@ -4,7 +4,8 @@
   "description": "CLI Tool for mite (https://mite.yo.lk)",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha ./test/*.test.js"
+    "test": "nyc --reporter=html --reporter=text mocha ./test/*.test.js",
+    "precommit": "npm run test"
   },
   "preferGlobal": true,
   "bin": {
